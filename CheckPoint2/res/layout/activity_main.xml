@@ -2,15 +2,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/ogo" />
+
+    <ImageButton
+        android:id="@+id/scores_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/about_btn"
+        android:layout_below="@+id/imageView1"
+        android:background="@drawable/trans"
+        android:src="@drawable/scores_btn" />
+
+    <ImageButton
+        android:id="@+id/play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exit_btn"
+        android:layout_below="@+id/scores_btn"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/trans"
+        android:src="@drawable/play_btn" />
+
+    <ImageButton
+        android:id="@+id/settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/about_btn"
+        android:background="@drawable/trans"
+        android:src="@drawable/settings_btn" />
+
+    <ImageButton
+        android:id="@+id/about_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/settings_btn"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="27dp"
+        android:layout_toRightOf="@+id/play_btn"
+        android:background="@drawable/trans"
+        android:src="@drawable/about_btn" />
+
+    <ImageButton
+        android:id="@+id/exit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/about_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/trans"
+        android:src="@drawable/exit_btn" />
 
 </RelativeLayout>
